@@ -17,3 +17,25 @@ def big_diff(nums):
  
   diff=max-min
   return diff
+# sum13
+def sum13(nums):
+  sum1=0
+  for i in range(0,len(nums)):
+    
+    if nums==[]:
+      return 0
+    
+    elif nums[i]==13:
+      nums[i]=0
+      if i+1<len(nums):
+        nums[i+1]=0
+    sum1=sum1+nums[i]
+      
+     
+  return sum1
+# has22
+def has22(nums):
+  for i in range(0,len(nums)-1):
+    if nums[i]==2  and nums[i+1]==2:
+      return True
+  return False
