@@ -1,0 +1,19 @@
+#count_evens
+def count_evens(nums):
+  count=0
+  for i in range(0,len(nums)):
+    if nums[i]%2==0:
+      count+=1
+  return count
+#big_diff
+def big_diff(nums):
+  min=nums[0]
+  max=0
+  for i in range(0,len(nums)):
+    if nums[i]>max:
+      max=nums[i]
+    if nums[i]<min:
+      min=nums[i]
+ 
+  diff=max-min
+  return diff
